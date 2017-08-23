@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Husky Supplies:Northeastern Dorm Supplies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="homeFunct.js"></script>
+  <style>
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      min-height: 200px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+    }
+	.dropdown-menu{
+	
+	width:450px;
+	
+	}
+	.input-group{
+	padding-top:10px;
+	width:350px;
+	}
+	@media (max-width: 1175px) {
+	#deals{
+		
+	
+	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav{
+        float: none!important;
+        margin-top:7.5px;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	}
+	@media (max-width: 990px) {
+	#deals{
+	
+	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav{
+        float: none!important;
+        margin-top:7.5px;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	}
+	
+	@media (max-width: 1480px) {
+	#deals{
+	
+	
+	}
+    .navbar-header {
+        float:none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav{
+        float: none!important;
+        margin-top:7.5px;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+#bathAndBed{
+	}
+
+.card-block {
+    position:relative;
+    display:inline-block;
+    
+    
+}
+
+#go {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    width:120px;
+    height:30px;
+}
+#myNavbar a{
+color:white;
+}
+#myNavbar li a:active #myNavbar li{
+background-color:white;
+}
+#myNavbar li a:active{
+color:#C50000;
+
+}
+#myNavbar ul>li>>ul>li>a{
+color:black;
+}
+.navbar-header{
+color:white;
+}
+.nav-item a{
+color:#C50000;
+}
+
+#bestsellers .col-sm-2{
+	border:2px solid black;
+
+}
+#best-sellers .panel-heading{
+background-color:#C50000;
+color:white;
+}
+#top-deals .panel-heading{
+background-color:black;
+color:white;
+}
+#top-deals a{
+background-color:white;
+color:black;
+
+}
+#best-sellers a{
+background-color:white;
+color:#C50000;
+}
+#bed ul li a,#bath ul li a,#furniture ul li a,#storage ul li a,#kitchen ul li a,#laundry ul li a,#electronics ul li a{
+
+color:black;
+
+}
+footer div {
+color:#C50000;
+}
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#bedBugProtector,#comforterSets,#mattresses,#bedcovers,#bedSheets,#pillows,#pillowCovers,#bedFrames{
+background-color:white;
+color:#C50000;
+border:1px solid #C50000;
+
+}
+#mainLinks div div a:hover{
+background-color:#C50000;
+color:white;
+border:1px solid white;
+}
+#searchaddonBtn{
+background-color:#C50000;
+
+}
+
+
+  </style>
+</head>
+<body bgcolor="#fafaed">
+<div class="container-fluid">
+	<div class="page-header">
+	<div class="row">
+	<div class="col-lg-6">
+		<img src="Pics/logo.png" alt="Pics/university_logo" class="img-responsive">&nbsp;&nbsp;<img src="Pics/thumbnail.jpg" alt="husky_logo"><strong><span style="color:#353535;left:10px;left:10px;bottom:-20px;top:10px;"><a href="home1.html" style="text-decoration:none">Husky Supplies</a></span></strong>
+	
+		</div>
+		<div class="col-lg-6">
+		
+                 <div class="input-group">
+                    <input type="text" class="form-control button"  placeholder="Search" name="country" id="autocomplete-ajax" style="position: absolute; z-index: 2; background: white; "/>
+					
+					<input type="text" class="form-control button"  name="country" id="autocomplete-ajax-x" disabled="disabled" style="color: #CCC; position: absolute; background: white; z-index: 1;"/>
+                    <span class="input-group-addon" id="searchaddonBtn">
+                            <span class="glyphicon glyphicon-search" style="color:white"></span>
+                        
+                    </span>
+                </div>
+           
+		
+		
+		</div>
+	  </div>
+
+
+<nav class="navbar navbar-inverse " id="navi" style="background-color:#C50000;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+			
+			
+	
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="background-color:#C50000;">
+      <ul class="nav navbar-nav" >
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Bath &amp Bedding <span class="caret"></span></a>
+			<ul class="dropdown-menu" id="bathAndBed">
+			<div class="row">
+			<div style="float:left" id="bed" class="col-sm-6 col-lg-6 ">
+			
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				<li><a href="bedding.html" style="color:#C50000">Bedding</a></li>
+			  <li><a href="category.html">Comforter Sets</a></li>
+			  <li><a href="category.html">Mattresses</a></li>
+			  <li><a href="category.html">Bed Covers</a></li>
+			  <li><a href="category.html">Bed Sheets</a></li>
+			  <li><a href="category.html">Pillows</a></li>
+			  <li><a href="category.html">Pillow Covers</a></li>
+			  <li><a href="category.html">Bed Bug Protector</a></li>
+			  <li><a href="category.html">Bed Frames</a></li>
+			  </ul>
+			</div>
+			<div style="float:left"class="col-sm-6 col-lg-6" id="bath">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+					<li><a href="bedding.html" style="color:#C50000">Bath</a></li>
+				  <li><a href="category.html">Bath towels &amp rugs</a></li>
+				  <li><a href="category.html">Shower curtains &amp accessories</a></li>
+				  <li><a href="category.html">Shower totes &amp Bath Storage</a></li>
+				  <li><a href="category.html">Robes &amp Slippers</a></li>
+				  <li><a href="category.html">Grooming</a></li>
+				  <li><a href="category.html">Dental Care</a></li>
+				  <li><a href="category.html">Hair Care</a></li>
+				  <li><a href="category.html">Skin Care</a></li>
+				  <li><a href="category.html">Personal Care</a></li>
+				  <li><a href="category.html">Medicines &amp Vitamins</a></li>			 		  
+				</ul>
+			</div>
+			</div>
+			</ul>
+		</li>
+      
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="furniture.html">Furniture <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="furniture" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">Desk &amp Desk Chairs</a></li>
+			  <li><a href="category.html">Sofas</a></li>
+			  <li><a href="category.html">Futons</a></li>
+			  <li><a href="category.html">Ottomans &amp poufs</a></li>
+			  <li><a href="category.html">Chairs</a></li>
+			  <li><a href="category.html">Book Shelves &amp Cases</a></li>
+			  <li><a href="category.html">Accent Tables</a></li>
+			  <li><a href="category.html">TV Stands &amp Entertainment Centers</a></li>
+			  <li><a href="category.html">Dining Tables</a></li></ul></div></div>
+			</ul>
+		</li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="storage.html">Storage &amp Organization <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="storage" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">StorageBoxes &amp Containers</a></li>
+			  <li><a href="category.html">Clothing Storage</a></li>
+			  <li><a href="category.html">Hangers &amp hooks</a></li>
+			  <li><a href="category.html">Underbed Storage</a></li>
+			  <li><a href="category.html">Shoe Storage</a></li>
+			  <li><a href="category.html">Closet Accessories</a></li>
+			  <li><a href="category.html">Jewelry Storage</a></li>
+			  <li><a href="category.html">Makeup Organizers</a></li>
+			  <li><a href="category.html">Memory Boards &amp Calendars</a></li>
+			  <li><a href="category.html">BackPacks &amp Duffels</a></li>
+			  <li><a href="category.html">Heating &amp Cooling</a></li></ul></div></div>
+			 		  
+			</ul>
+		</li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="electronics.html">Electronics<span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="electronics" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">Speakers &amp docking stations</a></li>
+			  <li><a href="category.html">HeadPhones &amp Earbuds</a></li>
+			  <li><a href="category.html">TurnTables &amp Vinyl records</a></li>
+			  <li><a href="category.html">Activity Trackers</a></li>
+			  <li><a href="category.html">Alarm Clocks</a></li>
+			  <li><a href="category.html">Tech Accessories</a></li>
+			  <li><a href="category.html">Electricals &amp Batteries</a></li></ul></div></div>
+			 		  
+			</ul>
+		</li>
+		
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="kitchen.html">Kitchen &amp Dining <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="kitchen" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">Small appliances</a></li>
+			  <li><a href="category.html">Coffee</a></li>
+			  <li><a href="category.html">Dinnerware</a></li>
+			  <li><a href="category.html">Drinkware</a></li>
+			  <li><a href="category.html">Cookware &amp Bakeware</a></li>
+			  <li><a href="category.html">Kitchen tools &amp gadgets</a></li>
+			  <li><a href="category.html">Food Storage</a></li>
+			  <li><a href="category.html">Water &amp filters</a></li>
+			  <li><a href="category.html">Care Packages</a></li></ul>	</div></div>	  
+			</ul>
+		</li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="laundry.html">Laundry &amp Cleaning<span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			
+			<div class="row">
+			<div style="float:left" id="laundry" class="col-sm-6 col-lg-6 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">Hampers &amp Sorters</a></li>
+			  <li><a href="category.html">Drying racks</a></li>
+			  <li><a href="category.html">Irons &amp Ironing boards</a></li>
+			  <li><a href="category.html">Laundry care</a></li>
+			  <li><a href="category.html">Vaccums &amp cleaning supplies</a></li></ul></div></div>
+			</ul>
+		</li>
+	
+		
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+		<ul class="dropdown-menu" style="color:black">
+		
+		<div class="row">
+			<div style="float:left" id="laundry" class="col-sm-6 col-lg-6 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			<li><a href="userRegistration.html">Register</a></li>
+			<li>
+			  <a href="loginpage.html">Login</a>
+			 </li>
+			  
+	
+
+			</ul>
+			</div>
+		</div>
+		</ul>
+		
+		</li>
+		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container" ng-app="myApp" ng-controller="validateCtrl">
+			<div class="row">
+				<div class="col-md-7 col-sm-7 col-xs-12">
+					<!-- Address Panel -->
+					<div class="panel panel-primary">
+						<div class="panel-heading" style="background-color: #00A398">Shipping
+							Address</div>
+						<div class="panel-body">
+
+							<form name="checkout" novalidate>
+
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="fname">First Name</label> <input type="text"
+												class="form-control" name="fname" ng-model="fname"
+												placeholder="Example: Steven" required> <span
+												style="color: #ff9999"
+												ng-show="checkout.fname.$touched &&  checkout.fname.$invalid">
+												<span ng-show="checkout.fname.$error.required">First
+													Name is required.*</span>
+											</span>
+										</div>
+									</div>
+
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="fname">Last Name</label> <input type="text"
+												class="form-control" name="lname" ng-model="lname"
+												placeholder="Example: Steven" required> <span
+												style="color: #ff9999"
+												ng-show="checkout.lname.$touched && checkout.lname.$invalid">
+												<span ng-show="checkout.lname.$error.required">Last
+													Name is required.*</span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<label for="address">Address</label> <input type="text"
+												class="form-control" name="address" ng-model="address"
+												placeholder="Example: 313 huntington ave" required>
+											<span style="color: #ff9999"
+												ng-show="checkout.address.$touched && checkout.address.$invalid">
+												<span ng-show="checkout.address.$error.required">Address
+													is required.*</span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<label for="zip">Postal Code</label> <input type="text"
+												class="form-control" name="zip" ng-model="zip"
+												placeholder="Example: 02120" required> <span
+												style="color: #ff9999"
+												ng-show="checkout.zip.$touched && checkout.zip.$invalid">
+												<span ng-show="checkout.zip.$error.required">Postal
+													code is required.*</span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="city">City</label> <input type="text"
+												class="form-control" name="city" ng-model="city"
+												placeholder="Example: Boston" required> <span
+												style="color: #ff9999"
+												ng-show="checkout.city.$touched &&  checkout.city.$invalid">
+												<span ng-show="checkout.city.$error.required">City is
+													required.*</span>
+											</span>
+										</div>
+									</div>
+
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="state">State</label> <input type="text"
+												class="form-control" name="state" ng-model="state"
+												placeholder="Example: California" required> <span
+												style="color: #ff9999"
+												ng-show="checkout.state.$touched && checkout.state.$invalid">
+												<span ng-show="checkout.state.$error.required">Country
+													is required.*</span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<label for="country">Country</label> <input type="text"
+												class="form-control" name="country" ng-model="country"
+												placeholder="Example: 02120" required> <span
+												style="color: #ff9999"
+												ng-show="checkout.country.$touched && checkout.country.$invalid">
+												<span ng-show="checkout.country.$error.required">Postal
+													code is required.*</span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<label for="mobile">Mobile</label> <input type="number"
+												class="form-control" name="mobile" ng-model="mobile"
+												placeholder="Example:517-456-3456" required> <span
+												style="color: #ff9999"
+												ng-show="checkout.mobile.$touched && checkout.mobile.$invalid">
+												<span ng-show="checkout.mobile.$error.required">Mobile
+													is required.*</span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<label for="email">Email</label> <input type="email"
+												class="form-control" name="email" ng-model="email"
+												placeholder="Example: xyz@gmail.com" required> <span
+												style="color: #ff9999"
+												ng-show="checkout.email.$touched && checkout.email.$invalid">
+												<span ng-show="checkout.email.$error.required">Email
+													is required.*</span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+
+					<!-- End Address Panel -->
+
+					<!--Payment -->
+
+					<div class="panel panel-primary">
+						<div class="panel-heading" style="background-color: #00A398">Payment</div>
+						<div class="panel-body">
+
+							<form name="cardForm" novalidate>
+
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<label for="card">Card Type</label> <select
+												class="form-control">
+												<option>VISA</option>
+												<option>Master Card</option>
+												<option>Discover</option>
+												<option>American Express</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<label for="fname">Card Number</label> <input name="cardNum"
+												type="number" name="cardNum" class="form-control"
+												ng-model="cardNum" placeholder="1234-3456-7654-5678"
+												required> <span style="color: #ff9999"
+												ng-show="cardForm.cardNum.$touched && cardForm.cardNum.$invalid">
+												<span ng-show="cardForm.cardNum.$error.required">Card
+													number required.*</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group">
+											<label for="fname">Card CVV</label> <input type="number"
+												class="form-control" name="cvv" ng-model="cvv"
+												placeholder="Example: 123" required> <span
+												style="color: #ff9999"
+												ng-show="cardForm.cvv.$touched && cardForm.cvv.$invalid">
+												<span ng-show="cardForm.cvv.$error.required">CVV is
+													required.*</span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="fname">Month</label> <input type="month"
+												class="form-control" placeholder="MM/DD" required>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="fname">Year</label> <input type="year"
+												class="form-control" placeholder="YYYY" required>
+										</div>
+									</div>
+								</div>
+								
+								<button type="submit" class="btn btn-success"
+									ng-disabled="checkout.$invalid || cardForm.$invalid"
+									style="background-color: #00A398"><a href="orders.html">Place Order</a></button>
+							</form>
+
+						</div>
+					</div>
+
+
+
+					<!-- End Payment -->
+				</div>
+				<div class="col-md-5 col-sm-5 col-xs-12">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<span class="pull-right"><a href="#">Edit Cart</a></span> Review
+							Order
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-4 col-sm-4">
+									<img
+										src="mug.jpg"
+										height="75%" width="75%">
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<span style="font-size: 16px;">Product Name</span><br> <span
+										style="color: #7d7979;">Qunatity: 1</span>
+								</div>
+								<div class="col-md-2 col-sm-2">
+									<span class="pull-right" style="font-weight: bold;">$10</span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-4 col-sm-4">
+									<img
+										src="shirt.jpg"
+										height="75%" width="75%">
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<span style="font-size: 16px;">Product Name</span><br> <span
+										style="color: #7d7979;">Qunatity: 1</span>
+								</div>
+								<div class="col-md-2 col-sm-2">
+									<span class="pull-right" style="font-weight: bold;">$35</span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-4 col-sm-4">
+									<img
+										src="shopping.jpg"
+										height="75%" width="75%">
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<span style="font-size: 16px;">Product Name</span><br> <span
+										style="color: #7d7979;">Qunatity: 1</span>
+								</div>
+								<div class="col-md-2 col-sm-2">
+									<span class="pull-right" style="font-weight: bold;">$25</span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<span style="font-weight: bold; font-size: 20px;">Sub
+										Total</span>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<span class="pull-right"
+										style="font-weight: bold; font-size: 20px;">$75</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<span style="font-weight: bold; font-size: 20px;">Shipping</span>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<span class="pull-right"
+										style="font-weight: bold; font-size: 20px;">$10</span>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<span style="font-weight: bold; font-size: 20px; color: green">Grand
+										Total</span>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<span class="pull-right"
+										style="font-weight: bold; font-size: 20px; color: green">$85</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<footer class="container-fluid text-center">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						Connect with the store<br> 
+						Receive promotions,news and information<br>
+						
+						
+					</div>
+					<div class="col-sm-4">
+						Customer Service: <a href="#">Returns</a>|
+						<a href="#">Privacy Policy</a>|
+						<a href="#">Our Guarantee</a>|
+						<a href="#">Shipping</a>|
+						<a href="#">Product Guides</a>
+						<a href="#">Customer Care</a>
+						<br>
+						Social Media &amp Articles: <a href="#">Instagram</a>|
+						<a href="#">Pinterest</a>|
+						<a href="#">Twitter</a>
+						|<a href="#">Facebook</a>|
+						<a href="#">The best Journal</a>|
+						
+					</div>
+					<div class="col-sm-4">
+					
+						Huskies Store<br>
+						360 HuntingtonAve,Boston,
+						MA 02115.
+						<a href="contact.html">Contact us</a>
+					
+					</div>
+				</div>
+			</div><br><hr>
+		  <p>Husky Store</p>
+		</footer>
+	<script>
+$(document).ready(function(){
+var myEl=document.getElementById('comforterSets');
+myEl.addEventListener('click',function(){
+     $("#div1").load("loginpage.html", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success")
+                alert("External content loaded successfully!");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+		},false);
+    
+	var myEls=document.getElementById('mattresses');
+myEls.addEventListener('click',function(){
+     $("#div1").load("loginpage.html", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success")
+                alert("External content loaded successfully!");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+		},false);
+    
+var myElh=document.getElementById('bedcovers');
+myElh.addEventListener('click',function(){
+     $("#div1").load("loginpage.html", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success")
+                alert("External content loaded successfully!");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+		},false);
+    
+
+	var myElo=document.getElementById('bedSheets');
+myElo.addEventListener('click',function(){
+     $("#div1").load("loginpage.html", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success")
+                alert("External content loaded successfully!");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+		},false);
+  
+
+	var myElem=document.getElementById('pillows');
+myElem.addEventListener('click',function(){
+     $("#div1").load("loginpage.html", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success")
+                alert("External content loaded successfully!");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+		},false);
+   
+
+	var myEl1=document.getElementById('pillowCovers');
+myEl1.addEventListener('click',function(){
+     $("#div1").load("loginpage.html", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success")
+                alert("External content loaded successfully!");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+		},false);
+   
+
+	var myEle=document.getElementById('bedBugProtector');
+myEle.addEventListener('click',function(){
+     $("#div1").load("loginpage.html", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success")
+                alert("External content loaded successfully!");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+		},false);
+   
+var myElement=document.getElementById('bedFrames');
+myElement.addEventListener('click',function(){
+     $("#div1").load("loginpage.html", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success")
+                alert("External content loaded successfully!");
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+		},false);
+    });
+
+
+
+	
+      var app = angular.module('myApp', []);
+      app.controller('validateCtrl', function($scope, $http) 
+      {
+          $http.get("http://ipinfo.io").success(function(data){
+            $scope.dataa = data;
+            $scope.zip = data.postal;
+            $scope.state = data.region;
+            $scope.city = data.city;
+            $scope.country = data.country;
+          })
+      });
+    </script>
+
+	
+</body>
+</html>
+

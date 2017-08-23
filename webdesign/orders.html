@@ -1,0 +1,876 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NU Supplies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      min-height: 200px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+    }
+	/*
+	@media (min-width:1400px){
+	.navbar-collapse{
+	width:auto;
+	border-top:0;
+	-webkit-box-shadow:none;
+	box-shadow:none
+	}
+	.navbar-collapse.collapse{
+	display:block!important;
+	height:auto!important;
+	padding-bottom:0;
+	overflow:visible!important
+	}
+	.navbar-collapse.in{overflow-y:visible}
+	.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse
+	{
+	padding-right:0;padding-left:0
+	}
+	}*/
+	.dropdown-menu{
+	
+	width:450px;
+	
+	}
+	.input-group{
+	padding-top:10px;
+	width:350px;
+	}
+	@media (max-width: 1175px) {
+	#deals{
+		
+	
+	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav{
+        float: none!important;
+        margin-top:7.5px;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	}
+	@media (max-width: 990px) {
+	#deals{
+	
+	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav{
+        float: none!important;
+        margin-top:7.5px;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	}
+	
+	@media (max-width: 1480px) {
+	#deals{
+	
+	
+	}
+    .navbar-header {
+        float:none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav{
+        float: none!important;
+        margin-top:7.5px;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+#bathAndBed{
+	}
+
+.card-block {
+    position:relative;
+    display:inline-block;
+    
+    
+}
+
+#go {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    width:120px;
+    height:30px;
+}
+#myNavbar a{
+color:white;
+}
+#myNavbar li a:active #myNavbar li{
+background-color:white;
+}
+#myNavbar li a:active{
+color:#C50000;
+
+}
+#myNavbar ul>li>>ul>li>a{
+color:black;
+}
+.navbar-header{
+color:white;
+}
+.nav-item a{
+color:#C50000;
+}
+
+#bestsellers .col-sm-2{
+	border:2px solid black;
+
+}
+#best-sellers .panel-heading{
+background-color:#C50000;
+color:white;
+}
+#top-deals .panel-heading{
+background-color:black;
+color:white;
+}
+#top-deals a{
+background-color:white;
+color:black;
+
+}
+#best-sellers a{
+background-color:white;
+color:#C50000;
+}
+#bed ul li a,#bath ul li a,#furniture ul li a,#storage ul li a,#kitchen ul li a,#laundry ul li a,#electronics ul li a{
+
+color:black;
+
+}
+footer div {
+color:#C50000;
+}
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="page-header">
+		<img src="logo.png" alt="Pics/university_logo">&nbsp;&nbsp;<img src="thumbnail.jpg" alt="husky_logo"><strong><span style="color:#353535;left:10px;left:10px;bottom:-20px;top:10px;">Husky Supplies</span></strong>
+		
+	  </div>
+
+
+<nav class="navbar navbar-inverse" style="background-color:#C50000;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+			<div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control"  placeholder="Search" >
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                </div>
+           </div>
+			
+	
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="background-color:#C50000;">
+      <ul class="nav navbar-nav" >
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Bath &amp Bedding <span class="caret"></span></a>
+			<ul class="dropdown-menu" id="bathAndBed">
+			<div class="row">
+			<div style="float:left" id="bed" class="col-sm-6 col-lg-6 ">
+			
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				<li><a href="#">Bedding</a></li>
+			  <li><a href="#">Comforter Sets</a></li>
+			  <li><a href="#">Mattresses</a></li>
+			  <li><a href="#">Bed Covers</a></li>
+			  <li><a href="#">Bed Sheets</a></li>
+			  <li><a href="#">Pillows</a></li>
+			  <li><a href="#">Pillow Covers</a></li>
+			  <li><a href="#">Bed Bug Protector</a></li>
+			  <li><a href="#">Bed Frames</a></li>
+			  </ul>
+			</div>
+			<div style="float:left"class="col-sm-6 col-lg-6" id="bath">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+					<li><a href="#">Bath</a></li>
+				  <li><a href="#">Bath towels &amp rugs</a></li>
+				  <li><a href="#">Shower curtains &amp accessories</a></li>
+				  <li><a href="#">Shower totes &amp Bath Storage</a></li>
+				  <li><a href="#">Robes &amp Slippers</a></li>
+				  <li><a href="#">Grooming</a></li>
+				  <li><a href="#">Dental Care</a></li>
+				  <li><a href="#">Hair Care</a></li>
+				  <li><a href="#">Skin Care</a></li>
+				  <li><a href="#">Personal Care</a></li>
+				  <li><a href="#">Medicines &amp Vitamins</a></li>			 		  
+				</ul>
+			</div>
+			</div>
+			</ul>
+		</li>
+      
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Furniture <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="furniture" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="#">Desk &amp Desk Chairs</a></li>
+			  <li><a href="#">Sofas</a></li>
+			  <li><a href="#">Futons</a></li>
+			  <li><a href="#">Ottomans &amp poufs</a></li>
+			  <li><a href="#">Chairs</a></li>
+			  <li><a href="#">Book Shelves &amp Cases</a></li>
+			  <li><a href="#">Accent Tables</a></li>
+			  <li><a href="#">TV Stands &amp Entertainment Centers</a></li>
+			  <li><a href="#">Dining Tables</a></li></ul></div></div>
+			</ul>
+		</li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Storage &amp Organization <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="storage" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="#">StorageBoxes &amp Containers</a></li>
+			  <li><a href="#">Clothing Storage</a></li>
+			  <li><a href="#">Hangers &amp hooks</a></li>
+			  <li><a href="#">Underbed Storage</a></li>
+			  <li><a href="#">Shoe Storage</a></li>
+			  <li><a href="#">Closet Accessories</a></li>
+			  <li><a href="#">Jewelry Storage</a></li>
+			  <li><a href="#">Makeup Organizers</a></li>
+			  <li><a href="#">Memory Boards &amp Calendars</a></li>
+			  <li><a href="#">BackPacks &amp Duffels</a></li>
+			  <li><a href="#">Heating &amp Cooling</a></li></ul></div></div>
+			 		  
+			</ul>
+		</li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics<span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="electronics" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="#">Speakers &amp docking stations</a></li>
+			  <li><a href="#">HeadPhones &amp Earbuds</a></li>
+			  <li><a href="#">TurnTables &amp Vinyl records</a></li>
+			  <li><a href="#">Activity Trackers</a></li>
+			  <li><a href="#">Alarm Clocks</a></li>
+			  <li><a href="#">Tech Accessories</a></li>
+			  <li><a href="#">Electricals &amp Batteries</a></li></ul></div></div>
+			 		  
+			</ul>
+		</li>
+		
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Kitchen &amp Dining <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="kitchen" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="#">Small appliances</a></li>
+			  <li><a href="#">Coffee</a></li>
+			  <li><a href="#">Dinnerware</a></li>
+			  <li><a href="#">Drinkware</a></li>
+			  <li><a href="#">Cookware &amp Bakeware</a></li>
+			  <li><a href="#">Kitchen tools &amp gadgets</a></li>
+			  <li><a href="#">Food Storage</a></li>
+			  <li><a href="#">Water &amp filters</a></li>
+			  <li><a href="#">Care Packages</a></li></ul>	</div></div>	  
+			</ul>
+		</li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Laundry &amp Cleaning<span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			
+			<div class="row">
+			<div style="float:left" id="laundry" class="col-sm-6 col-lg-6 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="#">Hampers &amp Sorters</a></li>
+			  <li><a href="#">Drying racks</a></li>
+			  <li><a href="#">Irons &amp Ironing boards</a></li>
+			  <li><a href="#">Laundry care</a></li>
+			  <li><a href="#">Vaccums &amp cleaning supplies</a></li></ul></div></div>
+			</ul>
+		</li>
+	
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+			<div class="row">
+			
+				<div class="col-md-12 col-xs-12">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<div class="panel-title">
+								<div class="row">
+									<div class="col-md-6">
+										<h5>
+											<span class="glyphicon glyphicon-file"></span> Summary
+										</h5>
+									</div>
+									<div class="col-md-6">
+										<a href="home1.html"><button
+												class="btn btn-primary btn-sm pull-right"
+												style="background-color: #00A398">
+												<span class="glyphicon glyphicon-share-alt"></span> Continue
+												Shopping
+											</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+							<h4><strong> &nbsp; Arriving on 22/12/2016<h4></strong>
+							<div class="progress" style="border: 5px;">
+					<div class="progress-bar progress-bar-striped active"
+						role="progressbar" aria-valuenow="60" aria-valuemin="0"
+						aria-valuemax="100" style="width: 40%; background-color: #00A398">
+						Your order Progress</div>
+				</div>
+
+								<div class="col-md-2 col-xs-12">
+								
+									<img class="img-responsive"
+										src="photo1.jpg">
+								</div>
+								<div class="col-md-4 col-xs-12">
+									<h4>
+										<strong>Lenovo 3GA5 Cover</strong>
+									</h4>
+									<h4>
+										<small>Fully vented for safe heat disbursement,Fully access
+										to all buttons and features. Snap on design, easy on easy off. Plug your charger, 
+										cable or headset without removing the case 
+											<br><font color="#e15454"> $12.00</font>
+											</small>
+											<br><br>
+											<button
+												class="btn btn-sm pull-left"
+												style="background-color: #eeeeee">  Buy it again </button>
+									</h4>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 text-right">
+									</div>
+									<div class="col-md-4 col-xs-9">
+										<br><br><button
+												class="btn btn-warning btn-sm pull-right btn-block">
+												 Track Package</button><button
+												class="btn btn-muted btn-sm pull-right btn-block">
+												 Return Item</button>
+												 <button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Ask Product Question</button>
+												<button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Leave Seller Feedback </button>
+									</div>
+									
+								</div>
+							</div><hr>
+							
+							<div class="row">
+							<h4><strong> &nbsp; Arriving tomorrow by 8pm<h4></strong>
+							<div class="progress" style="border: 5px;">
+					<div class="progress-bar progress-bar-striped active"
+						role="progressbar" aria-valuenow="60" aria-valuemin="0"
+						aria-valuemax="100" style="width: 70%; background-color: #00A398">
+						Your order Progress</div>
+				</div>
+
+								<div class="col-md-2 col-xs-12">
+								
+									<img class="img-responsive"
+										src="photo4.jpg">
+								</div>
+								<div class="col-md-4 col-xs-12">
+									<h4>
+										<strong>Hemnes Bed Frame</strong>
+									</h4>
+									<h4>
+										<small>Bed frame:
+Solid pine, Stain, Clear acrylic lacquer
+
+Underbed storage box, set of 2:
+Main parts: Solid pine, Stain, Clear acrylic lacquer
+Drawer bottom: Fiberboard, Acrylic paint
+<br><font color="#e15454"> $125.00</font>
+											</small>
+											<br><br>
+											<button
+												class="btn btn-sm pull-left"
+												style="background-color: #eeeeee">  Buy it again </button>
+									</h4>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 text-right">
+									</div>
+									<div class="col-md-4 col-xs-9">
+										<br><br><button
+												class="btn btn-warning btn-sm pull-right btn-block">
+												 Track Package</button><button
+												class="btn btn-muted btn-sm pull-right btn-block">
+												 Return Item</button>
+												 <button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Ask Product Question</button>
+												<button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Leave Seller Feedback </button>
+									</div>
+									
+								</div>
+							</div>
+							<hr>
+							<div class="row"><h4><strong>&nbsp; &nbsp; Order Delivered on 12/11/2016 &nbsp;<span class="glyphicon glyphicon-ok-sign"></span> </strong></h4>
+							<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+  aria-valuemin="0" aria-valuemax="100" style="width:100%">
+  </div>
+</div>
+								<div class="col-md-2 col-xs-12">
+									<img class="img-responsive"
+										src="photo3.jpg">
+								</div>
+								<div class="col-md-4 col-xs-12">
+									<h4>
+										<strong>Honeycomb Organizer </strong>
+									</h4>
+									<h4>
+										<small>Can be assembled in seconds and used for any sized drawers. Can be easily cut for perfect customized fit.
+Contains small holes on sides for breath-ability for whatever items you decide to organize. Total of 36 slots combined. Each honeycomb drawer organizer has 18 slots.<br><font color="#e15454"> $35.00</font></small>
+											
+											<br><br>
+											<button
+												class="btn btn-sm pull-left"
+												style="background-color: #eeeeee">  Buy it again </button>
+									</h4>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 text-right">
+									</div>
+									<div class="col-md-4 col-xs-9">
+										<button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Return Item </button> 
+												<button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Ask Product Question</button>
+												<button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Leave Seller Feedback </button>
+												<button
+												class="btn btn-default btn-sm pull-right btn-block"
+												style="background-color: #aaaaaa">  Archive Order </button>
+									</div>
+									
+								</div>
+							</div>
+								
+							<hr>
+							<div class="row">
+							<h4><strong>&nbsp; &nbsp; Order Cancelled &nbsp;<span class="glyphicon glyphicon-remove-sign"></span> </strong></h4>
+							<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40"
+  aria-valuemin="0" aria-valuemax="100" style="width:100%">
+  </div>
+</div>
+								<div class="col-md-2 col-xs-12"> 
+									<img class="img-responsive"
+										src="photo6.jpg">
+								</div>
+								<div class="col-md-4 col-xs-12">
+									<h4>
+										<strong>Terramo Refillable Planner</strong>
+									</h4>
+									<h4>
+										<small>Rich, contrasting leather-like vinyl and beautifully detailed stitching makes this planner a gorgeous fashion statement
+Internal pockets, pen loop and room for business cards
+Two pages per week undated planning pages, undated monthly tabs, event and holiday calendar<br><font color="#e15454"> $20.00</font></small>
+											
+											<br><br>
+											<button
+												class="btn btn-sm pull-left"
+												style="background-color: #eeeeee">  Buy it again </button>
+									</h4>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 text-right">
+										
+									</div>
+									<div class="col-md-4 col-xs-9">
+										<button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Return Item</button>
+												<button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Ask Product Question</button>
+												<button
+												class="btn btn-primary btn-sm pull-right btn-block"
+												style="background-color: #00A398">  Leave Seller Feedback </button>
+												<button
+												class="btn btn-default btn-sm pull-right btn-block"
+												style="background-color: #aaaaaa">  Archive Order </button>
+									</div>
+									
+								</div>
+							</div>
+							</div>
+							</div>	
+								</div></div>
+							</div><hr>
+							
+									
+									
+			<div class="container">						
+			<div class="row">
+			
+				<div class="col-md-12 col-xs-12">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<div class="panel-title">
+								<div class="row">
+									<div class="col-md-6">
+										<h5>
+											<span class="glyphicon glyphicon-th-list"></span> Recommendations
+										</h5>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<div class="col-md-3 col-xs-12">
+								
+									<img class="img-responsive"
+										src="photo.jpg"><br>
+										<button
+												class="btn btn-primary btn-sm center-block"
+												style="background-color: #fofofo">   Order </button>
+								</div>
+								<div class="col-md-3 col-xs-12">
+								
+									<img class="img-responsive"
+										src="photo2.jpg"><br>
+										
+										<button
+												class="btn btn-primary btn-sm center-block"
+												style="background-color: #fofofo">  Order </button>
+								</div>
+								<div class="col-md-3 col-xs-12">
+								
+									<img class="img-responsive"
+										src="photo7.jpg"><br>
+										<button
+												class="btn btn-primary btn-sm center-block"
+												style="background-color: #fofofo">  Order </button>
+								</div>
+								<div class="col-md-3 col-xs-12">
+								
+									<img class="img-responsive"
+										src="photo5.jpg"><br>
+										<button
+												class="btn btn-primary btn-sm center-block"
+												style="background-color: #fofofo">   Order </button>
+								</div>
+								
+								
+							</div>
+								
+								</div>
+							</div></div>
+								
+								</div></div>
+							
+								
+								
+
+
+<hr>
+<!-- Best Sellers-->
+
+<footer class="container text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				Connect with the store<br> 
+				Receive promotions,news and information<br>
+				
+				
+			</div>
+			<div class="col-sm-4">
+				Customer Service: <a href="#">Returns</a>|
+				<a href="#">Privacy Policy</a>|
+				<a href="#">Our Guarantee</a>|
+				<a href="#">Shipping</a>|
+				<a href="#">Product Guides</a>
+				<a href="#">Customer Care</a>
+				<br>
+				Social Media &amp Articles: <a href="#">Instagram</a>|
+				<a href="#">Pinterest</a>|
+				<a href="#">Twitter</a>
+				|<a href="#">Facebook</a>|
+				<a href="#">The best Journal</a>|
+				
+			</div>
+			<div class="col-sm-4">
+			
+				Huskies Store<br>
+				360 HuntingtonAve,Boston,
+				MA 02115.
+				<br><a href="contactus.html">Contact us</a>
+			
+			</div>
+		</div>
+	</div><br><hr>
+  <p>Husky Store</p>
+</footer>
+</div>
+<script>
+
+/*var x=document.getElementsByClassName('item active');
+var y=x[0].getElementsByTagName('img')[0].alt;
+alert(x+" "+y);
+alert("The alt is"+y+" ");
+document.getElementById(y).style.color="green";
+*/
+/*
+$('#myCarousel').on('slide.bs.carousel', function (ev) {
+  var id = ev.relatedTarget.id;
+  switch (id) {
+    case "1":
+      // do something the id is 1
+	  alert("1");
+      break;
+    case "2":
+      // do something the id is 2
+	  alert("2");
+      break;
+   
+    default:
+      //the id is none of the above
+  }
+})
+*/
+$('#myCarousel').on('slid.bs.carousel', function() {
+document.getElementById('image1').style.color="white";
+document.getElementById('image2').style.color="white";
+document.getElementById('image3').style.color="white";
+document.getElementById('image4').style.color="white";
+document.getElementById('image3').parentElement.style.backgroundColor="black";
+
+document.getElementById('image4').parentElement.style.backgroundColor="black";
+
+document.getElementById('image1').parentElement.style.backgroundColor="black";
+document.getElementById('image2').parentElement.style.backgroundColor="black";
+document.getElementById('image1').parentElement.style.borderStyle="none";
+document.getElementById('image2').parentElement.style.borderStyle="none";
+document.getElementById('image3').parentElement.style.borderStyle="none";
+document.getElementById('image4').parentElement.style.borderStyle="none";
+	  
+    currentIndex = $('div.active').index();
+   //$('.num').html(''+currentIndex+"*");
+   switch (currentIndex) {
+    case 0:
+      // do something the id is 1
+	  currentIndex++;
+	  
+	  document.getElementById('image'+currentIndex).style.color="white";
+	  document.getElementById('image'+currentIndex).parentElement.style.borderBottom="thick solid #C50000";
+	  
+      break;
+    case 1:
+      // do something the id is 2
+	  currentIndex++;
+	  
+	  document.getElementById('image'+currentIndex).style.color="white";
+	  document.getElementById('image'+currentIndex).parentElement.style.borderBottom="thick solid #C50000";
+	   
+      break;
+   
+	case 2:
+      // do something the id is 3
+	  currentIndex++;
+	  
+	  document.getElementById('image'+currentIndex).style.color="white";
+	  document.getElementById('image'+currentIndex).parentElement.style.borderBottom="thick solid #C50000";
+	   
+      break;
+	  case 3:
+      // do something the id is 4
+	  currentIndex++;
+	  
+	  document.getElementById('image'+currentIndex).style.color="white";
+	  document.getElementById('image'+currentIndex).parentElement.style.borderBottom="thick solid #C50000";
+	   
+      break;
+   
+   
+    default:
+      //the id is none of the above
+  }
+
+});
+function tabFunction(that)
+{
+
+	
+
+	switch(that)
+	{
+	
+	
+	
+		case "link1":
+		
+			document.getElementById('imgTab').src="Pics/comforters_deal.jpg";
+			
+			break;
+			
+	
+	
+	
+		case "link2":
+		
+	document.getElementById('imgTab').src="duvet-covers.jpg";
+			
+	
+			break;
+	
+	
+		case "link3":
+		
+	
+	document.getElementById('imgTab').src="storage.jpg";
+			
+	
+	
+	
+			break;
+			case "link4":
+		
+	
+	document.getElementById('imgTab').src="vaccum.jpg";
+			
+	
+	
+	
+			break;
+	
+	}
+}
+</script>
+
+</body>
+</html>
+

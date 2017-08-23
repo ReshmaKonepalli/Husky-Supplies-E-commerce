@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link href="content/styles.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<script 
+     src="https://code.jquery.com/jquery-2.2.2.min.js"  integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+  
+  <style>
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      min-height: 200px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+    }
+	/*
+	@media (min-width:1400px){
+	.navbar-collapse{
+	width:auto;
+	border-top:0;
+	-webkit-box-shadow:none;
+	box-shadow:none
+	}
+	.navbar-collapse.collapse{
+	display:block!important;
+	height:auto!important;
+	padding-bottom:0;
+	overflow:visible!important
+	}
+	.navbar-collapse.in{overflow-y:visible}
+	.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse
+	{
+	padding-right:0;padding-left:0
+	}
+	}*/
+	.dropdown-menu{
+	
+	width:450px;
+	
+	}
+	
+	.add-to-cart .btn-qty {
+  width: 52px;
+  height: 46px;
+}
+.add-to-cart .btn { border-radius: 0; }
+	
+	.input-group{
+	padding-top:10px;
+	width:350px;
+	}
+	@media (max-width: 1175px) {
+	#deals{
+		
+	
+	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav{
+        float: none!important;
+        margin-top:7.5px;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	}
+	@media (max-width: 990px) {
+	#deals{
+	
+	}
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav{
+        float: none!important;
+        margin-top:7.5px;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	}
+	
+	@media (max-width: 1480px) {
+	#deals{
+	
+	
+	}
+    .navbar-header {
+        float:none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav{
+        float: none!important;
+        margin-top:7.5px;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+#bathAndBed{
+	}
+
+.card-block {
+    position:relative;
+    display:inline-block;
+    
+    
+}
+
+#go {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    width:120px;
+    height:30px;
+}
+#myNavbar a{
+color:white;
+}
+#myNavbar li a:active #myNavbar li{
+background-color:white;
+}
+#myNavbar li a:active{
+color:#C50000;
+
+}
+#myNavbar ul>li>>ul>li>a{
+color:black;
+}
+.navbar-header{
+color:white;
+}
+.nav-item a{
+color:#C50000;
+}
+
+#bestsellers .col-sm-2{
+	border:2px solid black;
+
+}
+#best-sellers .panel-heading{
+background-color:#C50000;
+color:white;
+}
+#top-deals .panel-heading{
+background-color:black;
+color:white;
+}
+#top-deals a{
+background-color:white;
+color:black;
+
+}
+#best-sellers a{
+background-color:white;
+color:#C50000;
+}
+#bed ul li a,#bath ul li a,#furniture ul li a,#storage ul li a,#kitchen ul li a,#laundry ul li a,#electronics ul li a{
+
+color:black;
+
+}
+footer div {
+color:#C50000;
+}
+#searchaddonBtn{
+background-color:#C50000;
+
+}
+  </style>
+</head>
+
+
+<body bgcolor="#fafaed">
+<div class="container-fluid">
+	<div class="page-header">
+	<div class="row">
+	<div class="col-lg-6">
+		<img src="Pics/logo.png" alt="Pics/university_logo" class="img-responsive">&nbsp;&nbsp;<img src="Pics/thumbnail.jpg" alt="husky_logo"><strong><span style="color:#353535;left:10px;left:10px;bottom:-20px;top:10px;"><a href="home1.html" style="text-decoration:none">Husky Supplies</a></span></strong>
+	
+		</div>
+		<div class="col-lg-6">
+		
+                
+                    <div class="input-group">
+                    <input type="text" class="form-control button"  placeholder="Search" name="country" id="autocomplete-ajax" style="position: absolute; z-index: 2; background: white; "/>
+					
+					<input type="text" class="form-control button"  name="country" id="autocomplete-ajax-x" disabled="disabled" style="color: #CCC; position: absolute; background: white; z-index: 1;"/>
+                    <!-- <span class="input-group-addon" id="searchaddonBtn">
+                            <!-- <span class="glyphicon glyphicon-search" style="color:white"></span>
+                         -->
+                    
+                </div>
+           
+		
+		
+		</div>
+	  </div>
+
+
+<nav class="navbar navbar-inverse " id="navi" style="background-color:#C50000;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+			
+			
+	
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="background-color:#C50000;">
+      <ul class="nav navbar-nav" >
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Bath &amp Bedding <span class="caret"></span></a>
+			<ul class="dropdown-menu" id="bathAndBed">
+			<div class="row">
+			<div style="float:left" id="bed" class="col-sm-6 col-lg-6 ">
+			
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+				<li><a href="bedding.html" style="color:#C50000">Bedding</a></li>
+			  <li><a href="category.html">Comforter Sets</a></li>
+			  <li><a href="category.html">Mattresses</a></li>
+			  <li><a href="category.html">Bed Covers</a></li>
+			  <li><a href="category.html">Bed Sheets</a></li>
+			  <li><a href="category.html">Pillows</a></li>
+			  <li><a href="category.html">Pillow Covers</a></li>
+			  <li><a href="category.html">Bed Bug Protector</a></li>
+			  <li><a href="category.html">Bed Frames</a></li>
+			  </ul>
+			</div>
+			<div style="float:left"class="col-sm-6 col-lg-6" id="bath">
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+					<li><a href="bedding.html" style="color:#C50000">Bath</a></li>
+				  <li><a href="category.html">Bath towels &amp rugs</a></li>
+				  <li><a href="category.html">Shower curtains &amp accessories</a></li>
+				  <li><a href="category.html">Shower totes &amp Bath Storage</a></li>
+				  <li><a href="category.html">Robes &amp Slippers</a></li>
+				  <li><a href="category.html">Grooming</a></li>
+				  <li><a href="category.html">Dental Care</a></li>
+				  <li><a href="category.html">Hair Care</a></li>
+				  <li><a href="category.html">Skin Care</a></li>
+				  <li><a href="category.html">Personal Care</a></li>
+				  <li><a href="category.html">Medicines &amp Vitamins</a></li>			 		  
+				</ul>
+			</div>
+			</div>
+			</ul>
+		</li>
+      
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="furniture.html">Furniture <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="furniture" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">Desk &amp Desk Chairs</a></li>
+			  <li><a href="category.html">Sofas</a></li>
+			  <li><a href="category.html">Futons</a></li>
+			  <li><a href="category.html">Ottomans &amp poufs</a></li>
+			  <li><a href="category.html">Chairs</a></li>
+			  <li><a href="category.html">Book Shelves &amp Cases</a></li>
+			  <li><a href="category.html">Accent Tables</a></li>
+			  <li><a href="category.html">TV Stands &amp Entertainment Centers</a></li>
+			  <li><a href="category.html">Dining Tables</a></li></ul></div></div>
+			</ul>
+		</li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="storage.html">Storage &amp Organization <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="storage" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">StorageBoxes &amp Containers</a></li>
+			  <li><a href="category.html">Clothing Storage</a></li>
+			  <li><a href="category.html">Hangers &amp hooks</a></li>
+			  <li><a href="category.html">Underbed Storage</a></li>
+			  <li><a href="category.html">Shoe Storage</a></li>
+			  <li><a href="category.html">Closet Accessories</a></li>
+			  <li><a href="category.html">Jewelry Storage</a></li>
+			  <li><a href="category.html">Makeup Organizers</a></li>
+			  <li><a href="category.html">Memory Boards &amp Calendars</a></li>
+			  <li><a href="category.html">BackPacks &amp Duffels</a></li>
+			  <li><a href="category.html">Heating &amp Cooling</a></li></ul></div></div>
+			 		  
+			</ul>
+		</li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="electronics.html">Electronics<span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="electronics" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">Speakers &amp docking stations</a></li>
+			  <li><a href="category.html">HeadPhones &amp Earbuds</a></li>
+			  <li><a href="category.html">TurnTables &amp Vinyl records</a></li>
+			  <li><a href="category.html">Activity Trackers</a></li>
+			  <li><a href="category.html">Alarm Clocks</a></li>
+			  <li><a href="category.html">Tech Accessories</a></li>
+			  <li><a href="category.html">Electricals &amp Batteries</a></li></ul></div></div>
+			 		  
+			</ul>
+		</li>
+		
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="kitchen.html">Kitchen &amp Dining <span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			<div class="row">
+			<div style="float:left" id="kitchen" class="col-sm-12 col-lg-12 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">Small appliances</a></li>
+			  <li><a href="category.html">Coffee</a></li>
+			  <li><a href="category.html">Dinnerware</a></li>
+			  <li><a href="category.html">Drinkware</a></li>
+			  <li><a href="category.html">Cookware &amp Bakeware</a></li>
+			  <li><a href="category.html">Kitchen tools &amp gadgets</a></li>
+			  <li><a href="category.html">Food Storage</a></li>
+			  <li><a href="category.html">Water &amp filters</a></li>
+			  <li><a href="category.html">Care Packages</a></li></ul>	</div></div>	  
+			</ul>
+		</li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="laundry.html">Laundry &amp Cleaning<span class="caret"></span></a>
+			<ul class="dropdown-menu" style="color:black">
+			
+			<div class="row">
+			<div style="float:left" id="laundry" class="col-sm-6 col-lg-6 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			  <li><a href="category.html">Hampers &amp Sorters</a></li>
+			  <li><a href="category.html">Drying racks</a></li>
+			  <li><a href="category.html">Irons &amp Ironing boards</a></li>
+			  <li><a href="category.html">Laundry care</a></li>
+			  <li><a href="category.html">Vaccums &amp cleaning supplies</a></li></ul></div></div>
+			</ul>
+		</li>
+	
+		
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+		<ul class="dropdown-menu" style="color:black">
+		
+		<div class="row">
+			<div style="float:left" id="laundry" class="col-sm-6 col-lg-6 ">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+			<li><a href="userRegistration.html">Register</a></li>
+			<li>
+			  <a href="loginpage.html">Login</a>
+			 </li>
+			  
+	
+
+			</ul>
+			</div>
+		</div>
+		</ul>
+		
+		</li>
+		<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="product-section">
+ <div class="row">
+   <div class="col-md-6">
+    
+	 <img
+  src="shopping (1).jpg"
+  alt="Kodak Brownie Flash B Camera"
+  class="image-responsive"
+ />
+   </div>
+   <div class="col-md-6">
+   <p class="description">
+   Classic film camera. Uses 620 roll film.
+   Has a 2&frac14; x 3&frac14; inch image size.
+  <div class="row">
+ <div class="col-md-3">
+  <span class="sr-only">Four out of Five Stars</span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  <span class="label label-success">61</span>
+ </div>
+ <div class="col-md-3">
+  <span class="monospaced">Write a Review</span>
+ </div>
+</div><!-- end row --></p>
+  
+ <div class="row">
+ <div class="col-md-12 bottom-rule">
+  <h2 class="product-price">$12.99</h2>
+ </div>
+</div><!-- end row -->
+
+<div class="row add-to-cart">
+ <div class="col-md-5 product-qty">
+  <span class="btn btn-default btn-lg btn-qty">
+   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+  </span>
+  <input class="btn btn-default btn-lg btn-qty" value="1" />
+  <span class="btn btn-default btn-lg btn-qty">
+   <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+  </span>
+ </div>
+ <div class="col-md-4"><a href="cart.html">
+  <button class="btn btn-lg btn-brand btn-full-width">
+   Add to Cart
+  </button></a>
+ </div>
+</div><!-- end row -->
+
+<div class="row">
+ <div class="col-md-4 text-center">
+  <span class="monospaced">In Stock</span>
+ </div>
+ <div class="col-md-4 col-md-offset-1 text-center">
+  <a class="monospaced" href="#">Add to Shopping List</a>
+ </div>
+</div><!-- end row -->
+<div class="row">
+ <div class="col-md-12 bottom-rule top-10"></div>
+</div><!-- end row -->
+<div class="row">
+ <div class="col-md-12 top-10">
+  <p>To order by telephone, <a href="tel:18005551212">please call 1-800-555-1212</a></p>
+ </div>
+ 
+
+</span>
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+ <li role="presentation" class="active">
+  <a href="#description"
+   aria-controls="description"
+   role="tab"
+   data-toggle="tab"
+  >Description</a>
+ </li>
+ <li role="presentation">
+  <a href="#features"
+   aria-controls="features"
+   role="tab"
+   data-toggle="tab"
+  >Features</a>
+ </li>
+ <li role="presentation">
+  <a href="#notes"
+   aria-controls="notes"
+   role="tab"
+   data-toggle="tab"
+   >Notes</a>
+ </li>
+ <li role="presentation">
+  <a href="#reviews"
+   aria-controls="reviews"
+   role="tab"
+   data-toggle="tab"
+  >Reviews</a>
+ </li>
+</ul>
+
+
+<!-- Tab panes -->
+<div class="tab-content">
+ <div role="tabpanel" class="tab-pane active" id="description">
+ <p class="top-10">
+  The 'Brownie' Flash B is a box camera taking 2&frac14; × 3&frac14;" frames on 620 film, made of sheet metal by Kodak Ltd. in England, 1958-60. 
+  A more luxurious version of the Brownie Six-20 Model F, it has a two-speed shutter (1/80, 1/40 +B), a close-focus (5-10ft) lens, a yellow filter and flash sync. The Flash B is very similar to the Brownie Flash IV, adding a two-speed shutter but lacking a tripod bush.
+ </p>
+ <p>
+  <small>
+   (source <a href="http://camerapedia.wikia.com/wiki/Kodak_Brownie_Flash_B">http://camerapedia.wikia.com/wiki/Kodak_Brownie_Flash_B</a>)
+  </small>
+ </p>
+</div>
+ <div role="tabpanel" class="tab-pane top-10" id="features">
+  ...
+ </div>
+ <div role="tabpanel" class="tab-pane" id="notes">
+  ...
+ </div>
+ <div role="tabpanel" class="tab-pane" id="reviews">
+  ...
+ </div>
+</div>
+</div>		
+   </div>
+ </div>
+ 
+ 
+</div>
+
+
+<hr>
+<!-- Best Sellers-->
+
+<div class="container text-center">
+  <h3>Best Sellers</h3>
+  <br>
+  <div class="panel panel-primary" id="best-sellers">
+        <div class="panel-heading">What People bought before</div>
+        <div class="panel-body">
+		<div class="row" id="bestsellers">
+			<div class="col-sm-2">
+			
+				<img src="iron1.gif" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+			</div>
+			<div class="col-sm-2">
+				<img src="comforter1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+				
+			</div>
+			<div class="col-sm-2">
+				<img src="vaccum1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+			</div>
+			<div class="col-sm-2">
+				<img src="headphones1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+			</div>
+			<div class="col-sm-2">
+				<img src="desk1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+			</div>
+			<div class="col-sm-2">
+				<img src="lamp1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+			</div>
+		</div>
+		</div>
+	</div>
+  <hr>
+</div>
+
+<!--Top Deals-->
+<div class="container text-center">
+  <h3>Top Deals</h3>
+  <br>
+  <div class="panel panel-primary" id="top-deals">
+        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+        <div class="panel-body">
+		<div class="row">
+			<div class="col-sm-2">
+				<img src="iron1.gif" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+			</div>
+			<div class="col-sm-2">
+				<img src="comforter1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+				
+			</div>
+			<div class="col-sm-2">
+				<img src="lamp1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+			</div>
+			<div class="col-sm-2">
+				<img src="headphones1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View</a></p>
+			</div>
+			<div class="col-sm-2">
+				<img src="desk1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+			</div>
+			<div class="col-sm-2">
+				<img src="lamp1.jpg" class="img-responsive" style="width:100%" alt="Image">
+				<p id="go">
+		<a href="#" class="btn btn-primary" >View </a></p>
+			</div>
+		</div>
+		</div>
+	</div>
+  <hr>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				Connect with the store<br> 
+				Receive promotions,news and information<br>
+				
+				
+			</div>
+			<div class="col-sm-4">
+				Customer Service: <a href="#">Returns</a>|
+				<a href="#">Privacy Policy</a>|
+				<a href="#">Our Guarantee</a>|
+				<a href="#">Shipping</a>|
+				<a href="#">Product Guides</a>
+				<a href="#">Customer Care</a>
+				<br>
+				Social Media &amp Articles: <a href="#">Instagram</a>|
+				<a href="#">Pinterest</a>|
+				<a href="#">Twitter</a>
+				|<a href="#">Facebook</a>|
+				<a href="#">The best Journal</a>|
+				
+			</div>
+			<div class="col-sm-4">
+			
+				Huskies Store<br>
+				360 HuntingtonAve,Boston,
+				MA 02115.
+				<a href="contactus.html">Contact us</a>
+			
+			</div>
+		</div>
+	</div><br><hr>
+  <p>Husky Store</p>
+</footer>
+</div>
+<script>
+
+/*var x=document.getElementsByClassName('item active');
+var y=x[0].getElementsByTagName('img')[0].alt;
+alert(x+" "+y);
+alert("The alt is"+y+" ");
+document.getElementById(y).style.color="green";
+*/
+/*
+$('#myCarousel').on('slide.bs.carousel', function (ev) {
+  var id = ev.relatedTarget.id;
+  switch (id) {
+    case "1":
+      // do something the id is 1
+	  alert("1");
+      break;
+    case "2":
+      // do something the id is 2
+	  alert("2");
+      break;
+   
+    default:
+      //the id is none of the above
+  }
+})
+*/
+$('#myCarousel').on('slid.bs.carousel', function() {
+document.getElementById('image1').style.color="white";
+document.getElementById('image2').style.color="white";
+document.getElementById('image3').style.color="white";
+document.getElementById('image4').style.color="white";
+document.getElementById('image3').parentElement.style.backgroundColor="black";
+
+document.getElementById('image4').parentElement.style.backgroundColor="black";
+
+document.getElementById('image1').parentElement.style.backgroundColor="black";
+document.getElementById('image2').parentElement.style.backgroundColor="black";
+document.getElementById('image1').parentElement.style.borderStyle="none";
+document.getElementById('image2').parentElement.style.borderStyle="none";
+document.getElementById('image3').parentElement.style.borderStyle="none";
+document.getElementById('image4').parentElement.style.borderStyle="none";
+	  
+    currentIndex = $('div.active').index();
+   //$('.num').html(''+currentIndex+"*");
+   switch (currentIndex) {
+    case 0:
+      // do something the id is 1
+	  currentIndex++;
+	  
+	  document.getElementById('image'+currentIndex).style.color="white";
+	  document.getElementById('image'+currentIndex).parentElement.style.borderBottom="thick solid #C50000";
+	  
+      break;
+    case 1:
+      // do something the id is 2
+	  currentIndex++;
+	  
+	  document.getElementById('image'+currentIndex).style.color="white";
+	  document.getElementById('image'+currentIndex).parentElement.style.borderBottom="thick solid #C50000";
+	   
+      break;
+   
+	case 2:
+      // do something the id is 3
+	  currentIndex++;
+	  
+	  document.getElementById('image'+currentIndex).style.color="white";
+	  document.getElementById('image'+currentIndex).parentElement.style.borderBottom="thick solid #C50000";
+	   
+      break;
+	  case 3:
+      // do something the id is 4
+	  currentIndex++;
+	  
+	  document.getElementById('image'+currentIndex).style.color="white";
+	  document.getElementById('image'+currentIndex).parentElement.style.borderBottom="thick solid #C50000";
+	   
+      break;
+   
+   
+    default:
+      //the id is none of the above
+  }
+
+});
+function tabFunction(that)
+{
+
+	
+
+	switch(that)
+	{
+	
+	
+	
+		case "link1":
+		
+			document.getElementById('imgTab').src="Pics/comforters_deal.jpg";
+			
+			break;
+			
+	
+	
+	
+		case "link2":
+		
+	document.getElementById('imgTab').src="duvet-covers.jpg";
+			
+	
+			break;
+	
+	
+		case "link3":
+		
+	
+	document.getElementById('imgTab').src="storage.jpg";
+			
+	
+	
+	
+			break;
+			case "link4":
+		
+	
+	document.getElementById('imgTab').src="vaccum.jpg";
+			
+	
+	
+	
+			break;
+	
+	}
+}
+</script>
+   <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mockjax.js"></script>
+    <script type="text/javascript" src="src/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="scripts/countries.js"></script>
+    <script type="text/javascript" src="scripts/demo.js"></script>
+</body>
+</html>
+
+o
